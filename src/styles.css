@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --SoftMagenta: hsl(300, 69%, 71%);
+}
+section {
+  display: grid;
+  min-height: 100vh;
+  background-image: url("../images/bg-mobile.svg");
+  background-color: var(--Violet);
+  background-repeat: no-repeat;
+  background-size: contain;
+  user-select: none;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2em;
+  gap: 2em;
+}
+#ilustration {
+  width: 100%;
+  margin: 2em 0;
+}
+nav figure {
+  width: 45%;
+}
+#logo {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+}
+.content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  color: white;
+  text-align: center;
+}
+button {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  padding: 1em;
+  border-radius: 25px;
+  border: none;
+  color: var(--Violet);
+  width: 75%;
+  margin: 1em auto;
+  cursor: pointer;
+  transition: 0.5s color, 0.5s background-color;
+}
+button:hover {
+  background-color: var(--SoftMagenta);
+  color: white;
+}
+.content {
+  display: grid;
+  gap: 1em;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  color: white;
+}
+li {
+  display: grid;
+  place-items: center;
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: 0.5s color, 0.5s border;
+  font-size: 1.5em;
+}
+li:hover {
+  color: var(--SoftMagenta);
+  border: 2px solid var(--SoftMagenta);
+}
+footer a {
+  display: flex;
+  color: inherit;
+  text-decoration: none;
+}
+@media (min-width: 800px) {
+  #proportion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3em;
+  }
+  nav {
+    width: 35%;
+  }
+  main {
+    gap: 0;
+    margin: 3em 4em;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+  }
+  ul {
+    justify-content: flex-end;
+  }
+  h1 {
+    text-align: left;
+    font-size: 2.4em;
+    max-width: 500px;
+  }
+  .content p {
+    text-align: left;
+    max-width: 490px;
+    line-height: 1.5em;
+  }
+  .content button {
+    width: 35%;
+    margin: 0;
+  }
+  section {
+    background-image: url(../images/bg-desktop.svg);
+    background-size: cover;
+  }
+}
